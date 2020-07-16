@@ -2,8 +2,12 @@ package main
 
 import "fmt"
 
-const name, age = "Luke Skywalker", 26
+const name, age = "Ahsoka Tano", 22
 
+func getNameAndAge(name string, age int) string {
+	return fmt.Sprintf("Hello, name name is %s and I am %d years old!", name, age)
+}
 func main() {
-	fmt.Println("Hello, my name is", name, "and I am", age, "years old!")
+	nameAndAge := getNameAndAge(name, age)
+	fmt.Println(nameAndAge)
 }
